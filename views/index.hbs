@@ -1,0 +1,16 @@
+<h1>Welcome to our site!</h1>
+<div class="movies-wrapper">
+
+    
+    {{#each pictures}}
+    <div class="movie-item">
+        <img src="{{this.data}}" alt="">
+ 
+
+    {{else}}
+    <p>There aren't pictures yet!</p>
+    {{/each}}
+   
+
+    <a href="/picture/add">lets add some Pictures</a>
+</div>
